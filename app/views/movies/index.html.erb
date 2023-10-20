@@ -4,6 +4,12 @@
 
 <hr>
 
+<%= render partial: "zebra/elephant", locals: { person: "Alice"} %>
+<hr>
+
+
+<%= render partial: "zebra/elephant", locals: { person: "Bob" } %>
+<hr>
 <div>
   <%= link_to "Add a new movie", new_movie_path %>
 </div>
