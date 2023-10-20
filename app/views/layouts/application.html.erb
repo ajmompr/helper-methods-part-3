@@ -8,7 +8,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= render "shared/cdn_assets"%>
+    <%= render partial: "shared/cdn_assets"%>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
@@ -21,11 +21,11 @@
   </head>
 
   <body>
-    <%= render "shared/navbar"%>
+    <%= render partial: "shared/navbar"%>
 
     <div class="container mt-3">
       
-      <%= render "shared/flash_messages"%>
+      <%= render partial: "shared/flash_messages"%>
 
     <%= yield %>
     </div>
